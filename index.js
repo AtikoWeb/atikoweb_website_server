@@ -18,16 +18,16 @@ app.post('/mail', (req, res) => {
 		service: 'Mail', // Можно использовать другой SMTP сервис или данные вашего почтового сервера
 		secure: false,
 		auth: {
-			user: 'timmy.shiyanov@mail.ru', // Поменяйте на вашу почту
-			pass: 'SFw7X6cgtDJCDU5LNV45', // Поменяйте на пароль от вашей почты
+			user: 'bil@atikoweb.ru', // Поменяйте на вашу почту
+			pass: 'KW3NSYT4RyqtZwYsheKN', // Поменяйте на пароль от вашей почты
 		},
 		host: 'smtp.mail.ru',
-		port: '587',
+		port: '465',
 	});
 
 	const mailOptions = {
-		from: 'timmy.shiyanov@mail.ru', // Отправитель
-		to: 'evgeniy.hoffman@mail.ru', // Получатель
+		from: 'bil@atikoweb.ru', // Отправитель
+		to: 'sales@atikoweb.ru', // Получатель
 		subject,
 		html,
 	};
